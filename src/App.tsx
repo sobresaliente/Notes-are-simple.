@@ -8,11 +8,12 @@ import { AboutPageAsync } from "./pages/AboutPage/AboutPage.lazy";
 import { HomePageAsync } from "./pages/HomePage.tsx/HomePage.lazy";
 
 import { useTheme } from "./theme/useTheme";
+import classNames from "./helpers/classNames";
 
 const App = () => {
   const { theme, toggleTheme } = useTheme();
   return (
-    <div className={`app ${theme}`}>
+    <div className={classNames("app", {}, [theme])}>
       {theme}
       <button onClick={toggleTheme}>Change theme</button>
       <Link to={"/"}>Home</Link>
