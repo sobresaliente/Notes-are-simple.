@@ -9,7 +9,10 @@
     "moduleResolution": "node",
     "esModuleInterop": true, // позволяет использовать import/export вместо require
     "allowSyntheticDefaultImports": true, // позволяет писать * as React from 'react' без этого параметра, чисто сахар
-    "baseUrl": "."
+    "baseUrl": ".",
+    "paths": {
+      "*": ["./src/*"]
+    }
   },
   "ts-node": {
     "compilerOptions": {
