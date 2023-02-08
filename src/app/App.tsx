@@ -7,14 +7,14 @@ import classNames from "shared/lib/classNames";
 import { useTheme } from "app/providers/ThemeProvider";
 import { AppRouter } from "app/providers/router";
 import { Navbar } from "widgets/Navbar";
+import { ThemeToggler } from "widgets/ThemeToggler";
 
 const App = () => {
-  const { theme, toggleTheme } = useTheme();
+  const { theme } = useTheme();
   return (
     <div className={classNames("app", {}, [theme])}>
       <Navbar />
-      <button onClick={toggleTheme}>Change theme</button>
-
+      <ThemeToggler />
       <AppRouter />
     </div>
   );
