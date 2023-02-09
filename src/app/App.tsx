@@ -8,6 +8,7 @@ import { useTheme } from "app/providers/ThemeProvider";
 import { AppRouter } from "app/providers/router";
 import { Navbar } from "widgets/Navbar";
 import { ThemeToggler } from "widgets/ThemeToggler";
+import Sidebar from "widgets/Sidebar/ui/Sidebar";
 
 const App = () => {
   const { theme } = useTheme();
@@ -16,6 +17,7 @@ const App = () => {
       <Navbar />
       <ThemeToggler />
       <AppRouter />
+      <Sidebar />
     </div>
   );
 };
