@@ -10,3 +10,14 @@
   color: var(--primary-color);
   min-height: 100vh;
 }
+
+.main-content {
+  display: flex;
+  height: calc(100vh - 50px);
+  transition: background-color 1s;
+}
+
+.page-wrapper {
+  flex-grow: 1;
+  background-color: var(--primary-color);
+}

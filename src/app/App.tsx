@@ -15,9 +15,10 @@ const App = () => {
   return (
     <div className={classNames("app", {}, [theme])}>
       <Navbar />
-      <ThemeToggler />
-      <AppRouter />
-      <Sidebar />
+      <div className="main-content">
+        <Sidebar />
+        <AppRouter />
+      </div>
     </div>
   );
 };
