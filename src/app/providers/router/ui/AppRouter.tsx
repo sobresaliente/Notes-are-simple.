@@ -1,8 +1,8 @@
-import React, { Suspense } from "react";
-import { Route, Routes } from "react-router-dom";
-import { routeConfig } from "../lib/routeConfig";
+import React, { Suspense } from 'react';
+import { Route, Routes } from 'react-router-dom';
+import { routeConfig } from '../lib/routeConfig';
 
-const AppRouter = () => {
+function AppRouter() {
   return (
     <Suspense fallback={<div>loading</div>}>
       <Routes>
@@ -16,6 +16,6 @@ const AppRouter = () => {
       </Routes>
     </Suspense>
   );
-};
+}
 
 export default AppRouter;

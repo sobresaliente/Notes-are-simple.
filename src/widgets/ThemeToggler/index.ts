@@ -1,3 +1,3 @@
-import ThemeToggler from "./ui/ThemeToggler";
+import ThemeToggler from './ui/ThemeToggler';
 
 export { ThemeToggler };
