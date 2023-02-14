@@ -9,7 +9,7 @@ interface Props {
   className?: string;
 }
 
-const Sidebar: React.FC<Props> = ({ className }) => {
+const Sidebar = ({ className }: Props) => {
   const [collapsed, setCollapsed] = useState(false);
 
   const onToggle = () => {

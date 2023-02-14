@@ -32,5 +32,7 @@ module.exports = {
     'no-shadow': 'off',
     'react/require-default-props': 'off',
     'react/function-component-definition': 'off',
+    'no-undef': 'off',
+
   },
 };

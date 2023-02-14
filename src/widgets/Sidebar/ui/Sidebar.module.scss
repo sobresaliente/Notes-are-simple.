@@ -1,7 +1,10 @@
 .Sidebar {
   width: 300px;
   height: calc(100vh - 50px);
+
   background-color: var(--background-color);
+  border: 2px solid var(--accent-color);
+
   transition: width 0.3s;
 }
 
