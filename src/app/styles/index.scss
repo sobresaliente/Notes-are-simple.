@@ -4,11 +4,13 @@
 @import "themes/dark";
 
 .app {
+  min-height: 100vh;
+
   font-size: var(--font-size-m);
   line-height: var(--font-line-m);
-  background-color: var(--bg-color);
   color: var(--primary-color);
-  min-height: 100vh;
+
+  background-color: var(--bg-color);
 }
 
 .main-content {

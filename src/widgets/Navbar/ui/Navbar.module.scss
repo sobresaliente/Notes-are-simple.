@@ -1,5 +1,10 @@
 .navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+
   width: 100%;
   height: var(--navbar-height);
-  background-color: var(--inverted-bg-color);
+
+  background-color: var(--accent-bg-color);
 }
