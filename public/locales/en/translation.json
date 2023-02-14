@@ -1,4 +1,6 @@
 {
   "test": "test",
-  "language": "English"
+  "language": "English",
+  "home": "HOME",
+  "about": "ABOUT"
 }
