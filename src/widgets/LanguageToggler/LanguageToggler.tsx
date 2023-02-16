@@ -7,7 +7,7 @@ interface Props {
   className?: string;
 }
 
-const LanguageToggler: React.FC<Props> = ({ className }) => {
+const LanguageToggler = ({ className }: Props) => {
   const { t, i18n } = useTranslation();
 
   const onToggle = () => {
