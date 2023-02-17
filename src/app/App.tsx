@@ -7,19 +7,23 @@ import { AppRouter } from 'app/providers/router';
 import { Navbar } from 'widgets/Navbar';
 
 import Sidebar from 'widgets/Sidebar/ui/Sidebar';
-import { Suspense } from 'react';
+import { Suspense, useEffect } from 'react';
+import { ErrorBoundary } from './providers/ErrorBoundary';
 
 function App() {
   const { theme } = useTheme();
+
   return (
     <Suspense fallback="loading">
-      <div className={classNames('app', {}, [theme])}>
-        <Navbar />
-        <div className="main-content">
-          <Sidebar />
-          <AppRouter />
+      <ErrorBoundary>
+        <div className={classNames('app', {}, [theme])}>
+          <Navbar />
+          <div className="main-content">
+            <Sidebar />
+            <AppRouter />
+          </div>
         </div>
-      </div>
+      </ErrorBoundary>
     </Suspense>
   );
 }

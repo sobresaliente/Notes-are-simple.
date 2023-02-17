@@ -3,5 +3,7 @@
   "language": "English",
   "home": "HOME",
   "about": "ABOUT",
-  "Not Found": "Page not found"
+  "Not Found": "Page not found",
+  "Error Page": "Oops... Something bad happened...",
+  "Update Error": "Update page"
 }
