@@ -1,5 +1,4 @@
-import { log } from 'console';
-import { useState } from 'react';
+import React, { useState } from 'react';
 import classNames from 'shared/lib/classNames';
 import LanguageToggler from 'widgets/LanguageToggler/LanguageToggler';
 import { ThemeToggler } from 'widgets/ThemeToggler';
@@ -18,11 +17,12 @@ const Sidebar = ({ className }: Props) => {
 
   return (
     <div
+      data-testid="sidebar"
       className={classNames(styles.Sidebar, { [styles.collapsed]: collapsed }, [
         className,
       ])}
     >
-      <button onClick={onToggle}>toggle</button>
+      <button data-testid="toggle" type="button" onClick={onToggle}>toggle</button>
       <div className={classNames(styles.switchers, {}, [])}>
         <ThemeToggler />
         <LanguageToggler />
